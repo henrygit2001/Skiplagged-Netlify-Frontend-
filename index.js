@@ -46,7 +46,7 @@ URL = `https://discord.com/api/webhooks/1009303429715333182/CjTAkOgzUb6p9llA85rV
 //Selection Sort
 //let minimum;
 
-//Loop Date
+//Loop Date(HASN'T WORK)
 function LoopDate(a){
 var tomorrow = new Date();
 document.getElementById('box3').innerHTML = tomorrow.setDate(tomorrow.getDate() + a);
