@@ -36,7 +36,7 @@ for (let i = 0; i < Results_Count; i++) {
     }})
 ;}})
 
-myFetch().then(Webhook).then(() =>LoopDate(1)).then(() => LoopDate(2))
+myFetch().then(Webhook)
 .catch((err) => window.alert(err))}
 
 function Webhook(){
