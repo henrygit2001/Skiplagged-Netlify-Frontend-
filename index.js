@@ -12,7 +12,7 @@ let DATES_TO_GET = 30;
 //Filling out the Form
 
 
-function myFetch(){
+
 form.addEventListener('keypress', (e) => {
 if (e.key === 'Enter') {
 if(document.getElementById('data')){while(document.getElementById('data')){document.getElementById('data').remove()}}
@@ -20,6 +20,7 @@ To = document.getElementById('box1').value
 From = document.getElementById('box2').value
 Departure_date = document.getElementById('box3').value
 Results_Count = document.getElementById('box4').value
+function myFetch(){
 return fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(`https://skiplagged.com/api/search.php?from=${From}&to=${To}&depart=${Departure_date}`)}`)
 .then((response) => response.json())
 .then((data) => {
